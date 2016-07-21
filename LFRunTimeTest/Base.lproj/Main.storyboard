@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="J7C-5P-Ml6">
+                                <rect key="frame" x="0.0" y="170" width="600" height="265"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="葡萄美酒夜光杯，欲饮琵琶马上催。醉卧沙场君莫笑，古来征战几人回？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUh-Hf-Srp">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JG5-KG-kCf">
+                                        <rect key="frame" x="0.0" y="21" width="600" height="244"/>
+                                        <color key="backgroundColor" red="0.94117647059999998" green="0.1647058824" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">君不见黄河之水天上来⑵，奔流到海不复回。
+君不见高堂明镜悲白发，朝如青丝暮成雪⑶。
+人生得意须尽欢⑷，莫使金樽空对月。
+天生我材必有用，千金散尽还复来。
+烹羊宰牛且为乐，会须一饮三百杯⑸。
+岑夫子，丹丘生⑹，将进酒，杯莫停⑺。
+与君歌一曲⑻，请君为我倾耳听。
+钟鼓馔玉不足贵⑽，但愿长醉不复醒⒄。
+古来圣贤皆寂寞，惟有饮者留其名。
+陈王昔时宴平乐，斗酒十千恣欢谑⑿。
+主人何为言少钱⒀，径须沽取对君酌⒁。
+五花马⒂，千金裘，呼儿将出换美酒，与尔同销万古愁⒃。</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1396924048" green="1" blue="0.51353223940000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ZUh-Hf-Srp" firstAttribute="leading" secondItem="J7C-5P-Ml6" secondAttribute="leading" id="0R7-HY-tJn"/>
+                                    <constraint firstAttribute="bottom" secondItem="JG5-KG-kCf" secondAttribute="bottom" id="C9O-7T-BT0"/>
+                                    <constraint firstItem="ZUh-Hf-Srp" firstAttribute="top" secondItem="J7C-5P-Ml6" secondAttribute="top" id="VNB-3o-7gx"/>
+                                    <constraint firstItem="JG5-KG-kCf" firstAttribute="top" secondItem="ZUh-Hf-Srp" secondAttribute="bottom" id="Vzx-V2-VMb"/>
+                                    <constraint firstItem="JG5-KG-kCf" firstAttribute="top" secondItem="ZUh-Hf-Srp" secondAttribute="bottom" id="X6m-Ec-zED"/>
+                                    <constraint firstItem="JG5-KG-kCf" firstAttribute="top" secondItem="ZUh-Hf-Srp" secondAttribute="bottom" id="XZK-69-ohI"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZUh-Hf-Srp" secondAttribute="trailing" id="cdF-zE-wBR"/>
+                                    <constraint firstAttribute="trailing" secondItem="JG5-KG-kCf" secondAttribute="trailing" id="deo-eU-ct5"/>
+                                    <constraint firstItem="JG5-KG-kCf" firstAttribute="top" secondItem="ZUh-Hf-Srp" secondAttribute="bottom" id="i48-Q1-NA0"/>
+                                    <constraint firstItem="JG5-KG-kCf" firstAttribute="leading" secondItem="J7C-5P-Ml6" secondAttribute="leading" id="nSP-sO-Meo"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Vzx-V2-VMb"/>
+                                        <exclude reference="XZK-69-ohI"/>
+                                        <exclude reference="i48-Q1-NA0"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J7C-5P-Ml6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FXp-8l-d76"/>
+                            <constraint firstItem="J7C-5P-Ml6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="ZeC-gq-HMC"/>
+                            <constraint firstAttribute="trailing" secondItem="J7C-5P-Ml6" secondAttribute="trailing" id="znZ-lo-U1A"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="408" y="460"/>
         </scene>
     </scenes>
 </document>
